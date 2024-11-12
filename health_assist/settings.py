@@ -32,7 +32,7 @@ ALLOWED_HOSTS = []
 MY_APPS = [
     'health_assist.common',
     'health_assist.about_us',
-    'health_assist.news',
+    'health_assist.hnf_news',
     'health_assist.insurances',
     'health_assist.partners',
     'health_assist.contacts',

@@ -21,7 +21,7 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('health_assist.common.urls')),
     path('', include('health_assist.about_us.urls')),
-    path('', include('health_assist.news.urls')),
+    path('', include('health_assist.hnf_news.urls')),
     path('', include('health_assist.partners.urls')),
     path('', include('health_assist.insurances.urls')),
     path('', include('health_assist.contacts.urls')),
