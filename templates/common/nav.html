@@ -1,0 +1,20 @@
+{% load static %}
+<nav>
+    <a href="{% url 'home' %}"><img src="{% static 'css/images/Health_Net_Finance.jpeg-removebg.png' %}" alt="logo"></a>
+    
+    <div class="nav-links" id="navLinks">
+        <a href="#"><img src="{% static 'css/images/flags/Bulgaria.png' %}" alt="BG-Flag" class="flag-image"></a>
+        <i class="bi bi-x-square-fill" id="close"></i>
+        <ul>
+            <li><a href="{% url 'home' %}">HOME</a></li>
+            <li><a href="{% url 'about' %}">ABOUT</a></li>
+            <li><a href="{% url 'news' %}">NEWS</a></li>
+            <li><a href="{% url 'insurances' %}">INSURANCES</a></li>
+            <li><a href="{% url 'partners' %}">PARTNERS</a></li>
+            <li><a href="{% url 'contacts' %}">CONTACTS</a></li>
+        </ul>
+    
+    </div>
+    
+    <i class="bi bi-list" id="menue"></i>
+</nav>

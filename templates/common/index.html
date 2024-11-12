@@ -1,0 +1,60 @@
+{% extends 'common/base.html' %}
+{% load static %}
+
+{% block style %}
+    <link rel="stylesheet" href="{% static 'css/home.css' %}">
+{% endblock %}
+
+
+{% block content %}
+
+<!--General Insurances -->
+<section class="information">
+    <section class="general-insurances">
+        <h1>General Insurances We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        
+        <div class="row">
+            <div class="insurance-col">
+                <h3>Civil liability insurance</h3>
+                <a href="{% url 'insurances' %}"><p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quae aspernatur laudantium perferendis! In consequatur quidem, itaque cum vitae corporis possimus unde explicabo dolores molestiae deserunt sit recusandae temporibus pariatur!
+                </p></a>
+            </div>
+            <div class="insurance-col">
+                <h3>Autocasco insurance</h3>
+                <a href="{% url 'insurances' %}"><p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quae aspernatur laudantium perferendis! In consequatur quidem, itaque cum vitae corporis possimus unde explicabo dolores molestiae deserunt sit recusandae temporibus pariatur!
+                </p></a>
+            </div>
+            <div class="insurance-col">
+                <h3>Property insurance</h3>
+                <a href="{% url 'insurances' %}"><p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt quae aspernatur laudantium perferendis! In consequatur quidem, itaque cum vitae corporis possimus unde explicabo dolores molestiae deserunt sit recusandae temporibus pariatur!
+                </p></a>
+            </div>
+    
+        </div>
+    </section>
+<!-- Health Insurances -->
+    <section class="health-insurances">
+        <h1>Health Insurance We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    
+        <div class="row">
+            <div class="health-insurance-col">
+                <h3>Helth Insurance one</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo soluta quisquam repellendus nostrum, cumque saepe, iste eos in, ipsum inventore architecto blanditiis recusandae? Harum quaerat labore ullam incidunt suscipit voluptatum!</p>
+            </div>
+            <div class="health-insurance-col">
+                <h3>Helth Insurance two</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo soluta quisquam repellendus nostrum, cumque saepe, iste eos in, ipsum inventore architecto blanditiis recusandae? Harum quaerat labore ullam incidunt suscipit voluptatum!</p>
+            </div>
+            <div class="health-insurance-col">
+                <h3>Helth Insurance three</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo soluta quisquam repellendus nostrum, cumque saepe, iste eos in, ipsum inventore architecto blanditiis recusandae? Harum quaerat labore ullam incidunt suscipit voluptatum!</p>
+            </div>
+        </div>
+    </section>
+</section>
+{% endblock %}

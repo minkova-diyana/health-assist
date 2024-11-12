@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Health Net Finance</title>
+    {% block style %}
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+    {% endblock %}
+<body>
+    <section class="header">
+        {% include 'common/nav.html' %}
+        
+    <div class="text-box">
+    {% block header %}
+        <h1>YOUR INSURANCE BROCKER</h1>
+        <p>
+            We can help you make the right decision in choosing your insurance. <br>Let us assist you with finding the best product for your needs!
+        </p>
+        <a href="{% url 'about' %}" class="hero-btn">Visit Us To know More</a>
+        {% endblock %}
+    </div>
+    </section>
+<main>
+    {% block content %}
+    {% endblock %}
+</main>
+
+    <!-- Footer section -->
+<footer>
+    <p>
+        © 2024 Diyana Minkova. All rights reserved.
+      </p>
+</footer>
+{#<script src="script.js"></script>#}
+</body>
+</html>
