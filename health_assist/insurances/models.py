@@ -1,12 +1,14 @@
 from django.db import models
+from django.template.defaultfilters import slugify
 
-from mixins.mixins import SummaryAndHiddenInfoMixin
+from mixins.mixins import InsuranceInfoMixin
 
 
 # Create your models here.
-class Insurance(SummaryAndHiddenInfoMixin):
-    created_at = models.DateTimeField(auto_now_add=True)
-    updated_at = models.DateTimeField(auto_now=True)
+class GeneralInsurance(InsuranceInfoMixin):
+
+    pass
 
 
-
+class HealthInsurance(InsuranceInfoMixin):
+    pass

@@ -6,6 +6,12 @@ const flagElement = document.querySelector('.flag-image');
 const showMoreButtonElement = document.querySelectorAll('.show-more');
 const showLessElementBtn = document.querySelectorAll('.show-less');
 
+
+const insuranceMenueElements = document.querySelectorAll('#g')
+
+
+
+
 function showMenu(){
     closeMenuButtonElement.style.display = 'block';
     menuButtonElement.style.display = 'none';
@@ -45,6 +51,32 @@ function showLess(event){
 }
 
 
+function showInfo(event){
+    const allInfoElements = document.querySelectorAll('.insurance-container');
+    allInfoElements.forEach(infoElement => {
+        infoElement.style.display = 'none';
+        const scrollContext = infoElement.querySelector('p')
+        const hiddenText = infoElement.querySelector('.hiden-info');
+        const showLessButton = infoElement.querySelector('.show-less');
+        const showMoreButton = infoElement.querySelector('.show-more');
+
+
+    scrollContext.style.height = '';
+    scrollContext.style.overflowY = '';
+
+    hiddenText.style.display = 'none';
+    showLessButton.style.display = 'none';
+    showMoreButton.style.display = 'block';
+    });
+
+
+    const clickedElement = event.target;
+    const insuranceInfo = document.getElementById(clickedElement.getAttribute('data-info'))
+    insuranceInfo.style.display = 'flex';
+
+}
+
+
 menuButtonElement.addEventListener('click', showMenu);
 closeMenuButtonElement.addEventListener('click', closeMenu);
 showMoreButtonElement.forEach((element) => {
@@ -53,3 +85,9 @@ showMoreButtonElement.forEach((element) => {
 showLessElementBtn.forEach((element) => {
     element.addEventListener('click', showLess)
 });
+
+
+insuranceMenueElements.forEach((element) => {
+    element.addEventListener('click', showInfo)
+    });
+

@@ -1,16 +1,14 @@
 .general-insurance .left::after{
     content: '';
-    width: 100%;
     height: 2px;
     background: #0f2e52;
     display: block;
     margin: auto;
-    padding-right: 9em;
+    /*padding-right: 5em;*/
 }
 
 .health-inshurance .left::after{
     content: '';
-    width: 100%;
     height: 2px;
     background: #0f2e52;
     display: block;
@@ -62,11 +60,7 @@
 }
 
 
-.hiden-info{
-    display: none;
-}
-
-#civil{
+#civil-liability{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -151,9 +145,6 @@
 
     }
 
-    .hiden-info{
-        display: none;
-    }
     .insurance::after{
         content: '';
         width: 100%;
@@ -173,7 +164,7 @@
     .insurance-container{
         padding: 0.5em;
     }
-    #civil{
+    #civil-liability{
         padding: 0.5em;
     }
     h2{
@@ -189,7 +180,7 @@
         padding: 0.5em;
     }
 
-    .general-inshurance .left::after, .health-inshurance .left::after{
+    .general-insurance .left::after, .health-inshurance .left::after{
         padding-right: 0;
 
     }

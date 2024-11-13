@@ -7,7 +7,7 @@
 
 {% block content %}
     <h3>
-        Alwyas be the first to know
+        Always be the first to know
     </h3>
     
     <section class="wraper">
@@ -17,12 +17,16 @@
                     <h2>{{ n.title }}</h2>
                     <p>
                         {{ n.summary }}
+                        {% if n.hidden_info %}
                         <samp class="hiden-info">{{ n.hidden_info }}</samp>
                         <button class="show-more">Show More</button>
                         <button class="show-less">Show Less</button>
+                        {% endif %}
                     </p>
                 </div>
             </div>
+            {% empty %}
+            <h2>We have no news for the moment!!!</h2>
         {% endfor %}
     </section>
 {% endblock %}
