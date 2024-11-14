@@ -1,10 +1,33 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'common/base.html' %}
+{% load static %}
 
-</body>
-</html>
+
+{% block header %}
+    <h1>Edit about us information</h1>
+{% endblock %}
+
+
+{% block content %}
+    <section class="contact-form">
+    
+    </section>
+     <div class="wrap-container">
+            <div class="colum-left">
+                <div class="info">
+                        <form class="form-group" action="{% url 'edit_about' about_us.pk %}" method="post">
+                            {{ form.as_p }}
+                            {% csrf_token %}
+                            <button type="submit" class="submit-button">Submit</button>
+                        </form>
+                </div>    
+            </div>
+            <div class="colum-right">
+                
+                <img 
+                    src="{% static 'css/images/background-buisnes.png.png' %}"
+                    alt="ilustration"
+                    class="wrap-image"
+                />
+            </div>
+        </div>
+{% endblock %}

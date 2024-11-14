@@ -5,11 +5,24 @@ h3{
 
 .wraper {
 
-    background: linear-gradient(rgba(194, 205, 255, 0.151), rgba(255, 224, 224, 0.425));
+
     padding: 0 10em;
 }
 
+.icons{
+    padding: 2em;
+    text-align: center;
+}
 
+a{
+    text-decoration: none;
+}
+.bi-newspaper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+}
 .news-container {
     display: flex;
     flex-direction: column;

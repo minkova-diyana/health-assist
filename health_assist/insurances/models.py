@@ -1,7 +1,7 @@
 from django.db import models
 from django.template.defaultfilters import slugify
 
-from mixins.mixins import InsuranceInfoMixin
+from mixins.models_mixins import InsuranceInfoMixin
 
 
 # Create your models here.

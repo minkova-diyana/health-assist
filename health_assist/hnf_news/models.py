@@ -1,6 +1,6 @@
 from django.db import models
 
-from mixins.mixins import SummaryAndHiddenInfoMixin
+from mixins.models_mixins import SummaryAndHiddenInfoMixin
 
 
 # Create your models here.

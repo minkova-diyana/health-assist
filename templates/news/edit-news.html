@@ -1,10 +1,24 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends 'common/base.html' %}
+{% load static %}
 
-</body>
-</html>
+{% block header %}
+            <h1>News</h1>
+{% endblock %}
+
+{% block content %}
+    <h3>
+        Always be the first to know
+    </h3>
+    
+    <section class="wraper">
+            <div class="news-container">
+                <div class="container">
+                    <form action="{% url 'edit_news' news.pk %}" method="post">
+                        {{ form.as_p }}
+                        {% csrf_token %}
+                        <button type="submit" class="submit-button">Submit</button>
+                    </form>
+                </div>
+            </div>
+    </section>
+{% endblock %}
